@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Error 1: Root element is 'Hotel' instead of 'Hotels' -->
 <Hotel xmlns="http://www.example.com/hotels"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.example.com/hotels Hotels.xsd">
   
-  <!-- Hotel 1 -->
   <Hotel Rating="4.2">
-    <n>Westin</n>
+    <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <!-- Error 2: Missing required attribute NearestAirport -->
     <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -19,10 +16,8 @@
     </Address>
   </Hotel>
   
-  <!-- Hotel 2 -->
   <Hotel Rating="4.5">
-    <n>Marriott Downtown</n>
-    <!-- Error 3: Phone element is missing -->
+    <Name>Marriott Downtown</Name>
     <Address NearestAirport="Sky Harbor">
       <Number>411</Number>
       <Street>N 3rd St</Street>
@@ -32,13 +27,10 @@
     </Address>
   </Hotel>
   
-  <!-- Hotel 3 -->
   <Hotel Rating="4.3">
-    <!-- Error 5: Two names provided -->
-    <n>Hilton Phoenix Airport</n>
-    <n>Duplicate Hotel Name</n>
+    <Name>Hilton Phoenix Airport</Name>
+    <Name>Duplicate Hotel Name</Name>
     <Phone>480-894-1600</Phone>
-    <!-- Error 4: Address element has no closing tag -->
     <Address NearestAirport="Sky Harbor">
       <Number>2435</Number>
       <Street>S 47th St</Street>
@@ -47,9 +39,8 @@
       <Zip>85034</Zip>
   </Hotel>
   
-  <!-- Hotel 4 -->
   <Hotel>
-    <n>Hyatt Regency Scottsdale</n>
+    <Name>Hyatt Regency Scottsdale</Name>
     <Phone>480-444-1234</Phone>
     <Phone>800-233-1234</Phone>
     <Address NearestAirport="Sky Harbor">
